@@ -5,7 +5,7 @@ const projects = [
     ["images/project1-1.jpeg", "images/project1-2.jpeg", ],
     ["images/project2-1.jpeg", "images/project2-2.jpeg" ,"images/project2-3.jpeg"],
     ["images/project3-1.jpeg", "images/project3-2.jpeg", "images/project3-3.jpeg"],
-    ["images/project4-1.jpeg", "images/project4-2.jpeg" , "images/project3-3.jpeg"],
+    ["images/project4-1.jpeg", "images/project4-2.jpeg" , "images/project4-3.jpeg"],
     ["images/project5-1.jpeg", "images/project5-2.jpeg", "images/project5-3.jpeg", "images/project5-4.jpeg"],
     ["images/project6-1.jpeg", "images/project6-2.jpeg" , "images/project6-3.jpeg"]
 ];
@@ -191,5 +191,18 @@ function animate() {
 }
 
 animate();
+
+
+const scrollFill = document.querySelector(".scroll-fill");
+
+window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY;
+    const docHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
+
+    const scrollPercent = (scrollTop / docHeight) * 100;
+    scrollFill.style.height = `${scrollPercent}%`;
+});
+
 
 
