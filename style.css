@@ -399,9 +399,9 @@ footer {
 .scroll-indicator {
     position: fixed;
     top: 136px;
-    right: 25px;
+    right: 8px;
     width: 4px;
-    height: 60vh;
+    height: 70vh;
     border-radius: 10px;
     background: rgba(212,175,55,0.15);
     z-index: 2000;
@@ -420,4 +420,5 @@ footer {
     box-shadow: 0 0 20px rgba(212,175,55,0.9);
     transition: height 0.15s linear;
 }
+
 
